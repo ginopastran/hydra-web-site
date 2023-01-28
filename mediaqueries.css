@@ -152,7 +152,7 @@
   }
 
   .nav-mid a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .nav-bar svg {
@@ -186,5 +186,59 @@
 
   .about-text p {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-left img {
+    height: 60px;
+  }
+  .nav-right {
+    gap: 10px;
+  }
+
+  .login {
+    padding: 8px 22px;
+  }
+
+  .signin {
+    padding: 8px 22px;
+  }
+
+  .vr1-img {
+    width: 370px;
+    height: 306px;
+  }
+
+  .hero-info {
+    width: 100%;
+  }
+  .hero-info span {
+    font-size: 30px;
+  }
+
+  .hero-info h1 {
+    font-size: 26px;
+  }
+
+  .info-card {
+    width: 20%;
+  }
+
+  .vr2-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .contact-container iframe {
+    width: 300px;
+    height: 325px;
+  }
+
+  #contact {
+    padding-bottom: 30px;
+  }
+
+  footer {
   }
 }
