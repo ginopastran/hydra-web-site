@@ -1,0 +1,223 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  background: rgb(64, 58, 95);
+  background: radial-gradient(
+    circle,
+    rgba(64, 58, 95, 1) 0%,
+    rgba(33, 30, 46, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  width: 450px;
+  background: #302c42;
+  padding: 3rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.login-card-logo {
+  margin-bottom: 1rem;
+}
+
+.login-card-logo img {
+  width: 100px;
+}
+
+.login-card-logo,
+.login-card-header,
+.login-card-footer {
+  text-align: center;
+}
+
+.login-card a {
+  text-decoration: none;
+  color: #c0b7e8;
+}
+
+.login-card a:hover {
+  text-decoration: underline;
+}
+
+.login-card-header {
+  margin-bottom: 2rem;
+}
+
+.login-card-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  background: #c0b7e8;
+  background: linear-gradient(to right, #c0b7e8 0%, #8176af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login-card-header h1 + div {
+  font-size: calc(1rem * 0.8);
+  opacity: 0.8;
+  color: #fff;
+}
+
+.login-card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login-card-form .form-item {
+  position: relative;
+  color: #302c42;
+}
+
+.login-card-form .form-item .form-item-icon {
+  position: absolute;
+  top: 0.82rem;
+  left: 1.4rem;
+  font-size: 1.3rem;
+}
+
+.login-card-form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.login-card-form .form-item-other {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(1rem * 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.login-card-footer {
+  margin-top: 1.5rem;
+  font-size: calc(1rem * 0.8);
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"],
+.login-card input[type="email"] {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1rem 1.5rem;
+  padding-left: calc(1rem * 3.5);
+  border-radius: 100px;
+  width: 100%;
+  transition: background 0.5s;
+}
+
+.login-card input:focus {
+  background: white;
+}
+
+.login-card input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #c0b7e8;
+}
+
+.login-card label {
+  color: #fff;
+}
+
+.login-card button {
+  background: linear-gradient(
+    90deg,
+    rgba(129, 118, 175, 1) 0%,
+    rgba(192, 183, 232, 1) 100%
+  );
+  color: #302c42;
+  padding: 1rem;
+  border-radius: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background 0.5s;
+  font-weight: 600;
+  border: none;
+}
+
+.login-card button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+}
+
+.login-card-footer {
+  color: #fff;
+}
+
+.login-card-social {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.login-card-social > div {
+  opacity: 0.8;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: calc(1rem * 0.8);
+}
+
+.login-card-social-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.login-card-social-btns a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+
+.login-card-social-btns a:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 2rem 0;
+  }
+
+  .login-card {
+    width: 280px;
+    padding: 2rem;
+  }
+
+  .form-item-other {
+    display: flex;
+    gap: 20px;
+  }
+}

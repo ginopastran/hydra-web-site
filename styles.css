@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   background-color: #302c42;
@@ -475,3 +479,5 @@ footer {
   padding: 40px 20px;
   font-size: 14px;
 }
+
+/* LOGIN */
