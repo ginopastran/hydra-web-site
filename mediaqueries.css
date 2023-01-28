@@ -194,16 +194,10 @@
 }
 
 @media (max-width: 576px) {
-  header {
-    width: 100%;
-    justify-content: flex-start;
+  .vector2 {
+    left: 1%;
+    opacity: 20%;
   }
-
-  .nav-bar {
-    width: 100%;
-    gap: 0px;
-  }
-
   .nav-left img {
     height: 60px;
   }
