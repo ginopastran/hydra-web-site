@@ -351,7 +351,6 @@ header {
 #services {
   padding: 70px 10px;
   width: 100%;
-  max-width: 1400px;
   display: flex;
   justify-content: center;
   align-items: center;
